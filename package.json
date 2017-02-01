@@ -1,0 +1,18 @@
+{
+  "name": "gtris",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prebuild-css": "sass-lint -c lint/sass-lint.yml -v -q",
+    "build-css": "node-sass --output-style compressed --indent-type tab --indent-width 1 --include-path app/src/scss app/src/scss/gtris.scss app/dist/css/gtris.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.4.0",
+    "nodemon": "^1.11.0",
+    "sass-lint": "^1.10.2"
+  }
+}
