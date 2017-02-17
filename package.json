@@ -2,8 +2,8 @@
   "name": "build.npm-scripts",
   "version": "1.0.0",
   "description": "",
-  "author": "Clair",
-  "license": "ISC",
+  "author": "gabia-frontend-dev",
+  "license": "MIT",
   "scripts": {
     "lint:sass": "sass-lint -c .sass-lint.yml 'src/sass/utils/, src/sass/gtris.scss' -v -q",
     "build:css": "node-sass --output-style compact --indent-type tab --indent-width 1 --source-map dist/map/ -o src/sass/utils/ src/sass/gtris.scss dist/gtris.css",
