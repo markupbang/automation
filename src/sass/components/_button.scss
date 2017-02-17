@@ -1,0 +1,101 @@
+@import "import";
+/*gtris-button*/
+.gt-button {
+    display: inline-block;
+    padding: $button-padding;
+	color: $button-color;
+	background-color: $button-bgColor;
+	border: 1px solid $button-borderColor;
+    line-height: 31px;
+    cursor: pointer;
+    vertical-align: middle;
+    font-size: $button-fontsize;
+    overflow: visible;
+	@include border-radius($button-border-radius);
+    @include user-select(none);
+
+    > i {
+        margin-left: 2px;
+    }
+
+    &.gt-button-xsmall {
+        font-size: $button-xsmall-fontsize;
+        line-height: $button-xsmall-lineHeight;
+    }
+
+    &.gt-button-small {
+        font-size: $button-small-fontsize;
+        line-height: $button-small-lineHeight;
+    }
+
+    &.gt-button-large {
+        font-size: $button-large-fontsize;
+        line-height: $button-large-lineHeight;
+    }
+
+    &.gt-button-xlarge {
+        font-size: $button-xlarge-fontsize;
+        line-height: $button-xlarge-lineHeight;
+    }
+
+    &.gt-button:hover {
+        color: $button-hover-color;
+        background: $button-hover-bgColor;
+        border: 1px solid $button-hover-borderColor;
+        text-decoration: none;
+    }
+
+    //Primary
+    &.gt-primary {
+        color: $button-primary-color;
+        background: $button-primary-bgColor;
+        &:hover {
+            color: $button-primary-hover-color;
+            background: $button-primary-hover-bgColor;
+        }
+    }
+
+    //Error
+    &.gt-error {
+        color: $button-error-color;
+        background: $button-error-bgColor;
+        &:hover {
+           color: $button-error-hover-color;
+           background: $button-error-hover-bgColor;
+        }
+    }
+
+    //Warning
+    &.gt-warning {
+        color: $button-warning-color;
+        background: $button-warning-bgColor;
+        &:hover {
+           color: $button-warning-hover-color;
+           background: $button-warning-hover-bgColor;
+        }
+    }
+
+    //Secondary
+    &.gt-secondary {
+        color: $button-secondary-color;
+        background: $button-secondary-bgColor;
+        &:hover {
+           color: $button-secondary-hover-color;
+           background: $button-secondary-hover-bgColor;
+        }
+    }
+
+    //disabled
+    &.gt-button[disabled],
+    &.gt-button-disabled,
+    &.gt-button-disabled:hover,
+    &.gt-button-disabled:focus,
+    &.gt-button-disabled:active {
+        color: $button-disabled-color;
+        background-color: $button-disabled-bgColor;
+        border: 1px solid $button-borderColor;
+        cursor: not-allowed;
+        @include opacity(0.4);
+    }
+
+}

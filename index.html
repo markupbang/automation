@@ -1,0 +1,142 @@
+<!-- index.html -->
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://static.gabia.com/gtris/assets/css/style.css">
+    <link rel="stylesheet" href="dist/gtris.css">
+</head>
+<body>
+<div id="wrap">
+    
+    <div class="main">
+        <!-- header -->
+        <div class="header">
+            <h1>Modal</h1>
+            <h2 class="desc">To style an Modal, add the <span class="class-highliter">gt-modal</span> classname.</h2>
+        </div>
+
+        <!-- content -->
+        <div class="content">
+            <p class="code-title first">Result</p>
+
+            <!-- result -->
+            <button class="gt-button gt-button-small" data-ui="gt-modal" data-target="thisIsModalName1">Launch demo modal</button>
+            <!-- //result -->
+
+            <!-- source -->
+            <div class="source">
+                <div class="code">
+                    <pre><code class="language-markup">&lt;!-- [D] 버튼의 data-target 값과 활성화하려는 콘텐츠의 id 값을 동일하게 해주세요. --&gt;
+&lt;button class="gt-button gt-button-small" data-ui="gt-modal" data-target="thisIsModalName1"&gt;
+Launch demo modal
+&lt;/button&gt;
+&lt;div id="thisIsModalName1" class="gt-modal gt-hide"&gt;
+    &lt;div class="gt-modal-header"&gt;제목&lt;/div&gt;
+    &lt;div class="gt-modal-body"&gt;
+        &lt;p&gt;내용&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="gt-modal-close"&gt;
+        &lt;button data-modal="hide" title="닫기"&gt;
+            &lt;i class="gt-android-close"&gt;&lt;/i&gt;
+        &lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+            </div>
+            <!-- //source -->
+
+            <!-- source -->
+            <div class="source">
+                <p class="code-title">Variables</p>
+                <div class="code">
+                    <pre><code class="language-sass">$modal-width: 650px;
+$modal-bgColor: #fff;
+$modal-header-padding: 12px 24px;
+$modal-header-fontSize: 14px;
+$modal-header-color: #fff;
+$modal-header-bgColor: #2598e7;
+$modal-body-padding: 30px;
+$modal-body-maxHeight: 500px;
+$modal-body-color: #666;
+$modal-close-color: #fff;
+$modal-close-fontSize: 28px;
+$modal-close-top: 8px;
+$modal-close-right: 12px;</code></pre>
+                </div>
+            </div>
+            <!-- //source -->
+
+            <!-- source -->
+            <div class="source">
+                <p class="code-title">JavaScript</p>
+                <div class="code">
+                    <pre><code class="language-javascript">$(function() {
+    $(document).find('[data-ui="gt-modal"]').gmodal();
+});</code></pre>
+                </div>
+            </div>
+            <!-- //source -->
+
+        </div>
+        <!-- //content -->
+    </div>
+    <!-- //main -->
+</div>
+<!-- //wrap -->
+
+
+<!-- thisIsModalName1 -->
+<div id="thisIsModalName1" class="gt-modal gt-hide">
+    <div class="gt-modal-header">모달 타이틀</div>
+    <div class="gt-modal-body">
+        <p style="font-size:28px; color:#2985db; padding-bottom:10px; text-align:center">다양한 목표와 꿈이 가비아에서 피어납니다</p>
+        <p style="text-align:center; padding-top:20px"><button class="gt-button gt-button-small" data-ui="gt-modal" data-target="thisIsModalName2">가비아는?</button></p>
+    </div>
+    <div class="gt-modal-close"><button data-modal="hide" title="닫기"><i class="gt-android-close"></i></button></div>
+</div>
+<!-- //thisIsModalName1 -->
+
+<!-- thisIsModalName2 -->
+<div id="thisIsModalName2" class="gt-modal gt-hide" style="width:400px">
+    <div class="gt-modal-header">가비아는?</div>
+    <div class="gt-modal-body">
+        <p style="font-size:28px; color:#2985db; padding-bottom:10px;">비즈니스를 위한 IT, 가비아</p>
+        <p>가비아는 ‘가비아운’, 즉 ‘가벼움’을 의미합니다.<br>빛처럼 빠르고 가볍게, 공기처럼 어디에나 있는 존재로서 IT 세상을 움직입니다.</p>
+        <p style="text-align:center; padding-top:30px"><button class="gt-button gt-button-small" data-ui="gt-modal" data-target="thisIsModalName3">캠핑 동호회 '떠나자'</button></p>
+    </div>
+    <div class="gt-modal-close"><button data-modal="hide" title="닫기"><i class="gt-android-close"></i></button></div>
+</div>
+<!-- thisIsModalName2 -->
+
+<!-- thisIsModalName3 -->
+<div id="thisIsModalName3" class="gt-modal gt-hide" style="width:800px">
+    <div class="gt-modal-header">캠핑동호회 '떠나자'</div>
+    <div class="gt-modal-body">
+        <p style="font-size:35px; color:#2985db; padding-bottom:10px; text-align:center">열정적이고 체계적으로 놀기</p>
+        <img src="https://company.gabia.com/assets/images/club5.jpg">
+        <p style="padding:10px 2px">
+‘떠나자’는 사랑하는 가족, 동료들과 자연 속에서 추억을 만드는 동호회입니다.<br>
+우리 동호회의 미덕은 모두가 평등하다는 거에요. 구성원에는 다양한 직급이 있지만 텐트를 치는 일이나 요리하고 설거지 하는 일까지 모두 똑같이 나눠 한답니다.<br>
+캠핑을 하면서 일상에서 벗어난 색다른 재미를 느낄 수 있고, 함께 소통하고 대화하며 사람들과 친목을 다질 수 있어요.<br>
+맛있는 음식을 먹고 모닥불 앞에 앉아 이야기를 나누고, 푹신한 침낭에 누워 포근함을 느끼는 것 모두 캠핑을 통해서만 맛볼 수 있는 감성이랍니다.<br>
+무엇보다 비용도 확실히 아낄 수 있고요~ ^^<br>
+타닥타닥 소리 내며 타는 모닥불을 바라보면서 앉아있는 시간이 좋아 캠핑에 빠지게 되었어요.<br>
+모닥불 앞에서는 괜히 신이 나죠. 통기타 반주에 노래도 부르고 진솔한 얘기도 나누고, 여기에 시원한 맥주까지 있다면 더할 나위 없겠죠.
+깜깜한 밤을 밝히는 랜턴 불빛은 차가운 밤공기를 따뜻하게 만들고, 캠핑에서의 음식은 최상급 호텔 요리도 부럽지 않게 만듭니다.<br>
+자연과 함께 어우러져 편하게 있으려면 우선 나부터 편해야죠.
+때문에 구성원 대부분이 기본적인 장비와 여분의 장비까지도 갖추고 있답니다.
+새롭게 동호회 회원으로 가입하시거나 객원으로 참여하실 분들 언제나 환영이에요~
+        </p>
+    </div>
+    <div class="gt-modal-close"><button data-modal="hide" title="닫기"><i class="gt-android-close"></i></button></button></div>
+</div>
+<!-- thisIsModalName3 -->
+<script src="https://static.gabia.com/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="./dist/bundle.js"></script>
+<script>
+$(function() {
+    $(document).find('[data-ui="gt-modal"]').gmodal();
+});
+</script>
+</body>
+</html>

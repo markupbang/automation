@@ -1,0 +1,139 @@
+// Table
+$table-th-padding: 15px 0 !default;
+$table-td-padding: 10px 0 !default;
+$table-th-bgColor: #fff !default;
+$table-td-bgColor: #fff !default;
+$table-border-color: #e0e0e0 !default;
+$table-hover-bgColor: #f5f5f5 !default;
+$table-striped-bgColor: #f5f5f5 !default;
+$table-th-align: center !default;
+$table-td-align: center !default;
+
+// Paging
+$paging-fontSize: 12px !default;
+$paging-minWidth: 30px !default;
+$paging-lineHeight: 30px !default;
+$paging-color: #000 !default;
+$paging-hover-color: #000 !default;
+$paging-hover-bgColor: #f4f4f4 !default;
+$paging-active-color: #fff !default;
+$paging-active-bgColor: #1f8dd6 !default;
+$paging-disabled-bgColor: #fff !default;
+$paging-transition-duration: 0s !default;
+
+// Button
+$button-color: #666 !default;
+$button-fontsize: 16px !default;
+$button-bgColor: #e6e6e6 !default;
+$button-borderColor: #bfbfbf !default;
+$button-hover-color: #333 !default;
+$button-hover-bgColor: #fff !default;
+$button-hover-borderColor: #999 !default;
+$button-padding: 0 12px !default;
+$button-border-radius: 0px !default;
+$button-disabled-color: #666 !default;
+$button-disabled-bgColor: #e6e6e6 !default;
+$button-disabled-borderColor: #bfbfbf !default;
+$button-xsmall-fontsize: 11px !default;
+$button-xsmall-lineHeight: 25px !default;
+$button-small-fontsize: 14px !default;
+$button-small-lineHeight: 28px !default;
+$button-large-fontsize: 18px !default;
+$button-large-lineHeight: 34px !default;
+$button-xlarge-fontsize: 22px !default;
+$button-xlarge-lineHeight: 40px !default;
+$button-primary-color: #fff !default;
+$button-primary-bgColor: #1cb841 !default;
+$button-primary-hover-color: #fff !default;
+$button-primary-hover-bgColor: #19a83b !default;
+$button-error-color: #fff !default;
+$button-error-bgColor: #ca3c3c !default;
+$button-error-hover-color: #fff !default;
+$button-error-hover-bgColor: #b83636 !default;
+$button-warning-color: #fff !default;
+$button-warning-bgColor: #ef5e00 !default;
+$button-warning-hover-color: #fff !default;
+$button-warning-hover-bgColor: #e35b03 !default;
+$button-secondary-color: #fff !default;
+$button-secondary-bgColor: #42b8dd !default;
+$button-secondary-hover-color: #fff !default;
+$button-secondary-hover-bgColor: #3ba6c8 !default;
+
+// Tab
+$tab-color: #767676 !default;
+$tab-padding: 9px 20px !default;
+$tab-bgColor: #fff !default;
+$tab-borderColor: #bfbdbe !default;
+$tab-active-color: #fff !default;
+$tab-active-bgColor: #2985db !default;
+$tab-active-borderColor: #ccc !default;
+
+// Collapse
+$collapse-header-color: #333 !default;
+$collapse-header-padding: 20px !default;
+$collapse-content-padding: 30px !default;
+$collapse-active-header-color: #fff !default;
+$collapse-active-header-bgColor: #2985db !default;
+$collapse-active-content-color: #333 !default;
+$collapse-active-content-bgColor: #ebf0fb !default;
+$collapse-arrow-fontSize: 20px !default;
+$collapse-arrow-top: 14px !default;
+$collapse-arrow-right: 20px !default;
+
+// Layer
+$layer-wrap-width: 650px !default;
+$layer-wrap-bgColor: #fff !default;
+$layer-wrap-borderColor: #ccc !default;
+$layer-header-padding: 12px 24px !default;
+$layer-header-fontSize: 14px !default;
+$layer-header-color: #fff !default;
+$layer-header-bgColor: #2598e7 !default;
+$layer-body-padding: 30px !default;
+$layer-body-maxHeight: 450px !default;
+$layer-body-color: #666 !default;
+$layer-close-color: #fff !default;
+$layer-close-fontSize: 28px !default;
+$layer-close-top: 8px !default;
+$layer-close-right: 12px !default;
+
+// Modal
+$modal-width: 650px !default;
+$modal-bgColor: #fff !default;
+$modal-header-padding: 12px 24px !default;
+$modal-header-fontSize: 14px !default;
+$modal-header-color: #fff !default;
+$modal-header-bgColor: #2598e7 !default;
+$modal-body-padding: 30px !default;
+$modal-body-maxHeight: 500px !default;
+$modal-body-color: #666 !default;
+$modal-close-color: #fff !default;
+$modal-close-fontSize: 28px !default;
+$modal-close-top: 8px !default;
+$modal-close-right: 12px !default;
+
+//Progress
+$progress-height: 20px !default;
+$progress-bgColor: #f5f5f5 !default;
+$progress-active-bgColor: #2985db !default;
+$progress-active-fontSize: 12px !default;
+$progress-active-color: #fff !default;
+$progress-active-lineHeight: 20px !default;
+$progress-striped-color: rgba(255,255,255,.15) !default;
+$progress-striped-deg: 45deg !default;
+$progress-striped-bgSize: 40px 40px !default;
+$progress-border-radius: 4px !default;
+
+//Carousel
+$carousel-controller-position: static !default;
+$carousel-controller-left: 0 !default;
+$carousel-controller-top: 0 !default;
+$carousel-controller-right: 0 !default;
+$carousel-controller-bottom: 0 !default;
+$carousel-controller-textAlign: center !default;
+$carousel-playNpause-fontSize: 16px !default;
+$carousel-playNpause-minWidth: 16px !default;
+$carousel-pager-marginLeft: 6px !default;
+$carousel-pager-width: 14px !default;
+$carousel-pager-height: 14px !default;
+$carousel-pager-bgColor: #eee !default;
+$carousel-pager-activeBgColor: #1f8dd6 !default;

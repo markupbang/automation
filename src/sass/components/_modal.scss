@@ -1,0 +1,37 @@
+/* gtris-modal */
+.gt-modal {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	z-index: 1010;
+	width: $modal-width;
+	background: $modal-bgColor;
+
+	.gt-modal-header {
+		padding: $modal-header-padding;
+		font-size: $modal-header-fontSize;
+		color: $modal-header-color;
+		background: $modal-header-bgColor;
+		font-weight: bold;
+	 }
+
+	.gt-modal-body {
+		padding: $modal-body-padding;
+		max-height: $modal-body-maxHeight;
+		color: $modal-body-color;
+		overflow-y: auto;
+	 }
+
+	.gt-modal-close {
+		position: absolute;
+		top: $modal-close-top;
+		right: $modal-close-right;
+		
+		> button {
+			color: $modal-close-color;;
+			font-size: $modal-close-fontSize;
+			line-height: 1;
+		}
+	}
+	
+}
