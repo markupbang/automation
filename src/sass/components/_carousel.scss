@@ -1,0 +1,44 @@
+@import "import";
+/*gtris-carousel*/
+.gt-carousel {
+    
+    position: relative;
+
+    .gt-carousel-inner .gt-carousel-item {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .gt-carousel-controller {
+        position: $carousel-controller-position;
+        left: $carousel-controller-left;
+        top: $carousel-controller-top;
+        right: $carousel-controller-right;
+        bottom: $carousel-controller-bottom;
+    	text-align: $carousel-controller-textAlign;
+
+        .gt-play-pause {
+            display: inline-block;
+            font-size: $carousel-playNpause-fontSize;
+            min-width: $carousel-playNpause-minWidth;
+            vertical-align:middle
+        }
+
+        .gt-carousel-pager {
+            margin-left: $carousel-pager-marginLeft;
+            width: $carousel-pager-width;
+            height: $carousel-pager-height;
+            background: $carousel-pager-bgColor;
+            display: inline-block;
+            vertical-align: middle;
+            @include border-radius(50%);
+
+            &.gt-active {
+               background: $carousel-pager-activeBgColor;
+            }
+
+        }
+    }
+
+}
